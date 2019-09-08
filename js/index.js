@@ -44,9 +44,9 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 //#region nav
 const nav = document.getElementsByTagName('nav');
 let nav_links = nav[0].querySelectorAll('a');
-for (e = 0; e < nav_links.length; e++) {
-  let t = e+1;
-  nav_links[e].text = siteContent["nav"]["nav-item-"+t];
+for (i = 0; i < nav_links.length; i++) {
+  let t = i+1;
+  nav_links[i].text = siteContent["nav"]["nav-item-"+t];
 }
 const home = document.createElement('a');
 const gallery = document.createElement('a');
